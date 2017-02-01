@@ -1,1 +1,1 @@
-Boilerplate React App
+Todo App extended with priorities

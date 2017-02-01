@@ -4,6 +4,17 @@ var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
 var TodoApp = require('TodoApp');
 
+var actions = require('actions');
+var store = require('configureStore').configure();
+
+store.subscribe( () => {
+  console.log('New State', store.getState());
+});
+
+store.dispatch(actions.addTodo('Shut up', 'High'));
+store.dispatch(actions.setSearchText('Dog', 'Low'));
+store.dispatch(actions.toggleShowCompleted('Medium'));
+
 // Load foundation
 $(document).foundation();
 
@@ -16,4 +27,4 @@ ReactDOM.render(
   document.getElementById('app')
 );
 
-require('./plaground/redux-todo');
+//require('./plaground/redux-todo');
