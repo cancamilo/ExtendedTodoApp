@@ -1,13 +1,14 @@
 .main-container {
-  background: rgb(0,120,120);
+  background: black;
 }
 
 
 .container {
   background: $light-grey;
-  border: 1px solid $light-grey-border;
+  border: 3px solid $light-grey-border;
   border-radius: 5px;
   padding: 0;
+  margin: 5px;
   margin-bottom: 2rem;
 }
 

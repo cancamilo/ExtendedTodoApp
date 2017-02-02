@@ -9,3 +9,45 @@
 @import "components/container";
 @import "components/page-title";
 @import "components/todo";
+
+body {
+  background: black;
+}
+
+
+.popup-container {
+  position: relative;
+  display: inline-block;
+
+}
+.list-title {
+  float: left;
+  padding: 5px;
+}
+.add-button {
+  float: right;
+}
+.todoItem-enter {
+  opacity: 0.01;
+  background: rgb(20,20,20);
+}
+
+.todoItem-enter.todoItem-enter-active {
+  opacity: 1;
+  background: $light-grey;
+  transition: opacity 500ms ease-in;
+  transition: background 4300ms ease-in;
+}
+
+.todoItem-leave {
+  opacity: 1;
+}
+
+.todoItem-leave.todoItem-leave-active {
+  opacity: 0.01;
+  transition: opacity 400ms ease-in;
+}
+
+.todo-list{
+
+}
