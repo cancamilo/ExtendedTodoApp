@@ -45,12 +45,11 @@ var TodoApp = React.createClass({
             </div>
           </div>
 
-          {/* <div className="row">
-            <div className="column small-centered small-11 medium-centered medium-5 large-centered large-5 ">
+          <div className="row" id="footer">
+            <div className="column small-centered small-8 medium-centered medium-4 large-centered large-4 ">
               <AddTodo />
             </div>
-          </div> */}
-
+          </div>
         </div>
 
       </div>
